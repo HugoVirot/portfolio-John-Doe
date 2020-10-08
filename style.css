@@ -167,14 +167,14 @@ nav li i {
 
 #social li i {
     color: darkblue;
-    font-size: 50px;
+    font-size: 40px;
     transition: 0.3s;
 }
 
 #social li i:hover {
     color: darkgoldenrod;
     transition: 0.5s;
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 /* Media queries */
