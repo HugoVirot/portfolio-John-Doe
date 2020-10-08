@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>John Doe, développeur web</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="imageAndTitle">
+            <img src="personal.jpg" alt="John Doe">
+            <h1>John Doe, développeur web</h1>
+        </div>
+
+        <nav id="menuMobile">
+            <i id="hamburger" class="fas fa-bars fa-2x"></i>
+            <ul id="navigation">
+                <li><a href="#profile">Profil</a></li>
+                <li> <a href="#realisations">Réalisations</a> </li>
+                <li> <a href="#socialnetworks">Contact</i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="whitesection" id="profile">
+
+            <i class="far fa-id-card fa-3x"></i>
+            <h1>
+                Mon profil
+            </h1>
+            <p id="profileText">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum."</p>
+                <div id="informations">
+                    <p><span>Age : </span>32</p>
+                    <p><span>Ville : </span>Niort</p>
+                    <p><span>Technologies : </span>PHP, HTML, CSS, JS</p>
+                    <p><span>Passions : </span>informatique, sport, cinéma</p>
+                </div>
+
+        </section>
+
+        <section class="bluesection" id="realisations">
+
+            <i class="far fa-file-code fa-3x"></i>
+            <h1>
+                Réalisations
+            </h1>
+
+            <div id="websites">
+
+                <div>
+                    <h3>
+                        Website 1
+                    </h3>
+                    <img class="websiteimage" src="website1.jpg" alt="website1">
+                </div>
+
+                <div>
+                    <h3>
+                        Website 2
+                    </h3>
+                    <img class="websiteimage" src="website2.jpg" alt="website2">
+                </div>
+
+                <div>
+                    <h3>
+                        Website 3
+                    </h3>
+                    <img class="websiteimage" src="website3.jpg" alt="website3">
+                </div>
+
+                <div>
+                    <h3>
+                        Website 4
+                    </h3>
+                    <img class="websiteimage" src="website4.jpg" alt="website4">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="whitesection">
+            <i class="far fa-id-card fa-3x"></i>
+            <h1>
+                Contact
+            </h1>
+            <p>johndoe@arinfo.fr</p>
+            <div id="socialnetworks">
+                <ul id="social">
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li> <a href=""><i class="fab fa-twitter"></i></a> </li>
+                    <li> <a href=""><i class="fab fa-linkedin"></i></a></li>
+                    <li> <a href=""><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="bluesection">
+            <p>© Copyright 2020 John DOE</p>
+        </footer>
+
+    </main>
+</body>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $('#hamburger').on('click', function () {
+            if ($('#navigation').css('display') == 'none') {
+                $('#navigation').css('display', 'block');
+            }
+            else {
+                $('#navigation').css('display', 'none');
+            }
+        });
+    });
+
+</script>
+
+</html>

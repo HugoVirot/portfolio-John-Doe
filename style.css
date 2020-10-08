@@ -1,0 +1,219 @@
+/* Règles générales */
+
+body {
+    margin: 0;
+    padding: 0;
+    margin-top: -25px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+h1 {
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+p {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+li {
+    margin-right: 30px;
+    transition: 0.8;
+}
+
+li:hover {
+    position: relative;
+    transform: scale(1.5);
+    transition: 0.8;
+}
+
+.bluesection {
+    background-color: darkblue;
+    color: white;
+    padding: 50px 100px;
+}
+
+.whitesection {
+    color: darkgoldenrod;
+}
+
+.whitesection p {
+    color: grey;
+}
+
+/* Header */
+
+header h1 {
+    font-size: 40px;
+    border-bottom: 1px solid white;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    height: 300px;
+    padding: 60px;
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header:after {
+    border-bottom: 5px solid darkgoldenrod;
+}
+
+#imageAndTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    margin-top: 70px;
+    border-radius: 50%;
+    width: 200px;
+    filter: contrast(1.3);
+}
+
+header img:hover {
+    filter: sepia(60%);
+}
+
+header i {
+    visibility: hidden;
+    margin-left: 10px;
+    color: white;
+    display: none;
+}
+
+nav {
+    padding-bottom: 30px;
+}
+
+nav li i {
+    color: white;
+    font-size: 20px;
+}
+
+
+/* Profil */
+
+#profile {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#profileText:hover {
+    font-weight: bold;
+}
+
+#informations {
+    border: 2px solid darkblue;
+    padding: 40px 30px;
+    margin-top: 20px;
+    display : flex;
+    flex-direction: column;
+}
+
+#informations span {
+    color: darkblue;
+    font-weight: bolder;
+}
+
+/* Réalisations */
+
+#websites {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.websiteimage {
+    border-radius: 20px;
+    max-width: 400px;
+    transition: 0.7s;
+}
+
+.websiteimage:hover {
+    transition: 0.7s;
+    transform: scale(1.2);
+}
+
+/* Contact */
+
+#social li i {
+    color: darkblue;
+    font-size: 50px;
+    transition: 0.3s;
+}
+
+#social li i:hover {
+    color: darkgoldenrod;
+    transition: 0.5s;
+    transform: scale(1.3);
+}
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        margin-bottom: 20px;;
+    }
+
+    nav {
+        position: fixed;
+        display: flex;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: darkgoldenrod;
+        padding: 20px;
+        opacity: 80%;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+        font-size: 25px
+    }
+    
+    header i {
+        color: white;
+        visibility: visible;
+        text-align: left;
+    }
+
+    #navigation {
+        display: none;
+        width: 100vw;
+    }
+
+    .websiteimage {
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+}
